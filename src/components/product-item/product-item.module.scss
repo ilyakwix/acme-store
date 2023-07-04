@@ -1,0 +1,45 @@
+.root {
+  display: grid;
+  grid-template-areas: 'root';
+  overflow: hidden;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.image {
+  grid-area: root;
+  background-color: whitesmoke;
+  background-position: center;
+  background-size: cover;
+  transition: scale 200ms;
+}
+
+.root:hover .image{
+  scale: 105%;
+}
+
+.details {
+  grid-area: root;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: relative;
+  z-index: 10;
+}
+.title {
+  margin: 0;
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: white;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.price {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
